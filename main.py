@@ -9,7 +9,7 @@ client.remove_command('help')
 
 @client.event
 async def on_ready():
-    await client.change_presence(activity=discord.Activity(type=discord.ActivityType.watching, name="1.0v"))
+    await client.change_presence(activity=discord.Activity(type=discord.ActivityType.watching, name="2.0v"))
     client.reaction_roles = []
 
 @client.command(aliases=["Clear"])
