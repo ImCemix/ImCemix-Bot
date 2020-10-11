@@ -1,6 +1,6 @@
-import os
 import discord
 from discord.ext import commands
+import os
 
 intents = discord.Intents.default()
 intents.members = True
@@ -102,4 +102,4 @@ async def mail(ctx, member: discord.Member, *, text):
 async def on_resumed():
     print('Email neugeladen')
 
-client.run(os.environ["TOKEN"], reconnect=True)
+client.run(os.environ["TOKEN"])
