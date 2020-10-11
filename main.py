@@ -11,13 +11,6 @@ client.remove_command('help')
 async def on_ready():
     await client.change_presence(activity=discord.Activity(type=discord.ActivityType.watching, name="2.0v"))
     client.reaction_roles = []
-    
-@client.command()
-async def teamhelp(ctx):
-    embed = discord.Embed(title="Sleepy Gaming", color = discord.Colour.green())
-    embed.set_thumbnail(url="https://cdn.discordapp.com/icons/688513150047223920/b05e4eeb84ad0e0f7bb4d4ba46952916.webp?size=128")
-    embed.add_field(name="Link:", value="https://discord.gg/tZaTY5Z", inline=False)
-    await ctx.send(embed=embed)
 
 @client.command(aliases=["Clear"])
 @commands.has_permissions(manage_messages=True)
