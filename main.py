@@ -102,4 +102,4 @@ async def mail(ctx, member: discord.Member, *, text):
 async def on_resumed():
     print('Email neugeladen')
 
-client.run(os.environ["TOKEN"])
+client.run(os.environ["TOKEN"],  reconnect=True)
