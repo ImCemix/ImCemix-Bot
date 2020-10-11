@@ -11,6 +11,13 @@ client.remove_command('help')
 async def on_ready():
     await client.change_presence(activity=discord.Activity(type=discord.ActivityType.watching, name="2.0v"))
     client.reaction_roles = []
+    
+@client.command()
+async def teamhelp(ctx):
+    embed = discord.Embed(title="Community", color = discord.Colour.green())
+    embed.set_thumbnail(url="https://cdn.discordapp.com/icons/747436143863136288/355bd57f198aa295822be7005cec9aaa.webp?size=128")
+    embed.add_field(name="Link:", value="https://discord.gg/jEt4J7x", inline=False)
+    await ctx.send(embed=embed)
 
 @client.command(aliases=["Clear"])
 @commands.has_permissions(manage_messages=True)
