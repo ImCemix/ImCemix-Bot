@@ -19,12 +19,8 @@ async def clear(ctx, amount=5):
 
 @client.command()
 async def teamhelp(ctx):
-    embed = discord.Embed(title="Help Commands", color = discord.Colour.red())
-    embed.add_field(name="#clear", value="Löscht eine Bestimmte anzahl von Nachrichten", inline=False)
-    embed.add_field(name="#kick", value="Kickt einen bestimmten User", inline=False)
-    embed.add_field(name="#ban", value="Bannt einen bestimmten User", inline=False)
-    embed.add_field(name="#unban", value="Entbannt einen bestimmten User", inline=False)
-    embed.add_field(name="#mail", value="Sende über den Bot eine nachricht an Spieler (nur Support)", inline=False)
+    embed = discord.Embed(title="Partner", color = discord.Colour.red())
+    embed.add_field(name="F-Server", value="https://discord.gg/GBy5NE", inline=False)
     await ctx.send(embed=embed)
 
 @client.event
