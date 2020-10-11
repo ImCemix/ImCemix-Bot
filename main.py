@@ -17,12 +17,6 @@ async def on_ready():
 async def clear(ctx, amount=5):
     await ctx.channel.purge(limit=amount)
 
-@client.command()
-async def teamhelp(ctx):
-    embed = discord.Embed(title="Partner", color = discord.Colour.red())
-    embed.add_field(name="F-Server", value="https://discord.gg/GBy5NE", inline=False)
-    await ctx.send(embed=embed)
-
 @client.event
 async def on_raw_reaction_add(payload):
     for role, msg, emoji in client.reaction_roles:
