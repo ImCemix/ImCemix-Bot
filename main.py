@@ -29,7 +29,7 @@ async def teamhelp(ctx):
     embed.add_field(name="§5.1 Eigene Musik/Töne", value="Das Einspielen von eigener Musik, oder das Übetragen von anderen nicht erwünschten Tönen ist untersagt.", inline=False)
     embed.add_field(name="§5.2 Bots (insb. Musik-Bots)", value="Es dürfen keine Bots mit dem Discord Server verbunden werden. Bots dürfen nur in ausgewiesenen Channels verbunden werden und auch nur dann, wenn kein weiterer Bot in dem Channel aktiv ist.", inline=False)
     embed.add_field(name="§6.1 Meldepflicht", value="Es sind alle Benutzer angehalten, die Discord-Server Regeln zu beachten. Sollte ein Regelverstoß von einem Benutzer erkannt werden, ist dieser umgehend einem Admin zu melden.", inline=False)
-    embed.set_footer(name="Zum akzeptieren hier klicken.")
+    embed.set_footer(text="Zum akzeptieren hier klicken.")
     await ctx.send(embed=embed)
     
 @client.command(aliases=["Clear"])
